@@ -1,0 +1,9 @@
+source venv/lunch/bin/activate
+export DJANGO_SETTINGS_MODULE=lunch.settings.local
+
+
+這叫 template tag。很顯然，你不能在 template 中寫 Python（all hail PHP!），所以如果你需要在 template 中使用任何邏輯（JavaScript 不算），就必須使用 template tags。
+Django 的 template tag 語法是下面這樣：
+{% tag_name [ argument ... ] %}
+
+
